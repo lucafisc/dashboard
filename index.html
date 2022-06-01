@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+  <body>
+<div class="container">
+    <div class="header">
+        <div class="flex-container left-justify-grid">
+        <i class="logo" data-feather="coffee"></i>
+        <h2>Dashboard</h2>
+        </div>
+        <div class="search-container">
+        <input class="search" classtype="search" id="search" placeholder="Search">
+        <i id="s-icon" class="s-icon" data-feather="search"></i>
+    </div>
+        <div class="flex-container right-justify-grid">
+        <i class="button icon" data-feather="bell"></i>
+        <img class="avatar" src="/images/avatar.jpeg" alt="">
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+          <div class="flex-container nav-card">
+              <i class="icon" data-feather="home"></i>
+              <li>Home</li>
+          </div>
+          <div class="flex-container nav-card">
+            <i class="icon" data-feather="user"></i>
+            <li>Profile</li>
+        </div>
+        <div class="flex-container nav-card">
+            <i class="icon" data-feather="message-square"></i>
+            <li>Messages</li>
+            <div class="unread">42</div>
+        </div>
+        <div class="flex-container nav-card v">
+            <i class="icon" data-feather="clock"></i>
+            <li>History</li>
+        </div>
+        <div class="flex-container nav-card">
+            <i class="icon" data-feather="check-square"></i>
+            <li>Tasks</li>
+        </div>
+        <div class="flex-container nav-card">
+            <i class="icon" data-feather="users"></i>
+            <li>Communities</li>
+        </div>
+        </ul>
+        <ul>
+            <div class="flex-container nav-card">
+                <i class="icon" data-feather="settings"></i>
+                <li>Settings</li>
+            </div>
+            <div class="flex-container nav-card">
+                <i class="icon" data-feather="help-circle"></i>
+                <li>Support</li>
+            </div>
+            <div class="flex-container nav-card">
+                <i class="icon" data-feather="lock"></i>
+                <li>Privacy</li>
+            </div>
+        </ul>
+    </div>
+    <div class="menu">Menu</div>
+    <div class="content">Content</div>
+    <div class="ann">Ann</div>
+    <div class="trend">Trend</div>
+</div>
+
+    <script>
+      feather.replace()
+    </script>
+    <script src="script.js" defer></script>
+
+  </body>
+</html>
+
+
+<!DOCTYPE html>
