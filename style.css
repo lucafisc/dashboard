@@ -8,16 +8,32 @@
 }
 
 :root {
-    --dark-gray: #969696;
-    --light-gray: #F7F7F7;
-    --font-color: black;
-    --font-negative: white;
     --blue: #0084FF;
     --border: 0.5px solid var(--dark-gray);
     --border-inactive: 0.5px solid var(--light-gray);
     --radius: 5px;
     --font-main: 'Work Sans', sans-serif;
     --icon-size: 15px;
+}
+
+:root.light {
+    --dark-gray: #969696;
+    --light-gray: #F7F7F7;
+    --font-color: black;
+    --font-negative: white;
+    --card-color: white;
+}
+
+:root.dark {
+    --dark-gray: #727272;
+    --light-gray: #111111;
+    --font-color: white;
+    --font-negative: black;
+    --card-color: #1c1c1c;
+}
+
+#sun-btn {
+    display: none;
 }
 
 body {
@@ -132,6 +148,10 @@ body {
     -webkit-box-shadow: inset 0px 0px 8px -4px rgba(0, 0, 0, 0.52);
     box-shadow: inset 0px 0px 8px -4px rgba(0, 0, 0, 0.52);
 }
+h1, h2, h3, h4, h5 {
+    color: var(--font-color);
+}
+
 h1 {
     font-weight: 300;
     font-size: 35px;
@@ -288,7 +308,7 @@ li {
  }
 
  .info-card {
-     background-color: var(--font-negative);
+     background-color: var(--card-color);
      border-radius: var(--radius);
     width: 100%;
     padding: 20px;
