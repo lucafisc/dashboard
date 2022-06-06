@@ -25,10 +25,9 @@ body {
 }
 
 .container {
-    height: 100%;
     display: grid;
     grid-template-columns: 200px 3fr 1fr;
-    grid-template-rows: 70px 50px 4fr 4fr;
+    grid-template-rows: 70px 50px auto auto;
     grid-template-areas:
         "header  header   header"
         "nav     menu     menu"
