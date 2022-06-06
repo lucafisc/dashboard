@@ -1,84 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://unpkg.com/feather-icons"></script>
-    </head>
-  <body>
-<div class="container">
-    <div class="header">
-        <div class="flex-container left-justify-grid">
-        <i class="logo" data-feather="coffee"></i>
-        <h2>Dashboard</h2>
-        </div>
-        <div class="search-container">
-        <input class="search" classtype="search" id="search" placeholder="Search">
-        <i id="s-icon" class="s-icon" data-feather="search"></i>
-    </div>
-        <div class="flex-container right-justify-grid">
-        <i class="button icon" data-feather="bell"></i>
-        <img class="avatar" src="/images/avatar.jpeg" alt="">
-        </div>
-    </div>
-    <div class="nav">
-        <ul>
-          <div class="flex-container nav-card">
-              <i class="icon" data-feather="home"></i>
-              <li>Home</li>
-          </div>
-          <div class="flex-container nav-card">
-            <i class="icon" data-feather="user"></i>
-            <li>Profile</li>
-        </div>
-        <div class="flex-container nav-card">
-            <i class="icon" data-feather="message-square"></i>
-            <li>Messages</li>
-            <div class="unread">42</div>
-        </div>
-        <div class="flex-container nav-card v">
-            <i class="icon" data-feather="clock"></i>
-            <li>History</li>
-        </div>
-        <div class="flex-container nav-card">
-            <i class="icon" data-feather="check-square"></i>
-            <li>Tasks</li>
-        </div>
-        <div class="flex-container nav-card">
-            <i class="icon" data-feather="users"></i>
-            <li>Communities</li>
-        </div>
-        </ul>
-        <ul>
-            <div class="flex-container nav-card">
-                <i class="icon" data-feather="settings"></i>
-                <li>Settings</li>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="flex-container left-justify-grid">
+                <i class="logo" data-feather="coffee"></i>
+                <h2>Dashboard</h2>
             </div>
-            <div class="flex-container nav-card">
-                <i class="icon" data-feather="help-circle"></i>
-                <li>Support</li>
+            <div class="search-container">
+                <input class="search" classtype="search" id="search" placeholder="Search">
+                <i id="s-icon" class="s-icon" data-feather="search"></i>
             </div>
-            <div class="flex-container nav-card">
-                <i class="icon" data-feather="lock"></i>
-                <li>Privacy</li>
+            <div class="flex-container right-justify-grid">
+                <i class="button icon" data-feather="bell"></i>
+                <img class="avatar" src="/images/avatar.jpeg" alt="">
             </div>
-        </ul>
+        </div>
+        <div class="nav">
+            <ul>
+                <div class="flex-container nav-card default-card">
+                    <i class="icon" data-feather="home"></i>
+                    <li>Home</li>
+                </div>
+                <div class="flex-container nav-card">
+                    <i class="icon" data-feather="user"></i>
+                    <li>Profile</li>
+                </div>
+                <div class="flex-container nav-card">
+                    <i class="icon" data-feather="message-square"></i>
+                    <li>Messages</li>
+                    <div class="unread">42</div>
+                </div>
+                <div class="flex-container nav-card v">
+                    <i class="icon" data-feather="clock"></i>
+                    <li>History</li>
+                </div>
+                <div class="flex-container nav-card">
+                    <i class="icon" data-feather="check-square"></i>
+                    <li>Tasks</li>
+                </div>
+                <div class="flex-container nav-card">
+                    <i class="icon" data-feather="users"></i>
+                    <li>Communities</li>
+                </div>
+            </ul>
+            <ul>
+                <div class="flex-container nav-card">
+                    <i class="icon" data-feather="settings"></i>
+                    <li>Settings</li>
+                </div>
+                <div class="flex-container nav-card">
+                    <i class="icon" data-feather="help-circle"></i>
+                    <li>Support</li>
+                </div>
+                <div class="flex-container nav-card">
+                    <i class="icon" data-feather="lock"></i>
+                    <li>Privacy</li>
+                </div>
+            </ul>
+        </div>
+        <div class="menu flex-container">
+            <h4>Hi there, @username</h3>
+                <div class="flex-container">
+                    <div class="action-menu">New</div>
+                    <div class="action-menu">Upload</div>
+                    <div class="action-menu">Share</div>
+                </div>
+        </div>
+        <div class="content">
+            <h1>You projects</h1>
+            <div class="cards-container">
+                <div class="info-card project-card">
+                    <h4>Super Cool Project</h4>
+                    <p>Sed tempus ut lacus ut scelerisque.
+                        Suspendisse sollicitudin nibh erat, id
+                        facilisis felis accumsan nec.</p>
+                    <div class="flex-container action-icons">
+                        <i class="button icon" data-feather="star"></i>
+                        <i class="button icon" data-feather="eye"></i>
+                        <i class="button icon" data-feather="share"></i>
+                    </div>
+                </div>
+                <div class="info-card project-card">
+                    <h4>Less Cool Project</h4>
+                    <p>Nullam condimentum ipsum ut lectus vehicula
+                        consectetur. Quisque sed dolor tincidunt,
+                        consectetur saplen et. facilisis dolor. Duis sem
+                        purus, dignissim ut sapien In, varius
+                        pellentesque lacus</p>
+                    <div class="flex-container action-icons">
+                        <i class="button icon" data-feather="star"></i>
+                        <i class="button icon" data-feather="eye"></i>
+                        <i class="button icon" data-feather="share"></i>
+                    </div>
+                </div>
+                <div class="info-card project-card">
+                    <h4>Impossible App</h4>
+                    <p>In hac habitasse platea dictumst. Vivamus
+                        dictum rutrum arcu, a placerat velit sagittis id.</p>
+                    <div class="flex-container action-icons">
+                        <i class="button icon" data-feather="star"></i>
+                        <i class="button icon" data-feather="eye"></i>
+                        <i class="button icon" data-feather="share"></i>
+                    </div>
+                </div>
+                <div class="info-card project-card">
+                    <h4>Easy Peasy App</h4>
+                    <p>Etiam cursus eros ac efficitur fringilla.
+                        Vestibulum dignissim urna eget accumsan
+                        aliquam. Curabitur dignissim nisi in tortor
+                        commodo, ac bibendum magna tincidunt.</p>
+                    <div class="flex-container action-icons">
+                        <i class="button icon" data-feather="star"></i>
+                        <i class="button icon" data-feather="eye"></i>
+                        <i class="button icon" data-feather="share"></i>
+                    </div>
+                </div>
+                <div class="info-card project-card">
+                    <h4>Ad Blocker</h4>
+                    <p>Quisque get rutrum nisl. Nam augue
+                        justo. cursus vitae metus vel. pharetra
+                        hendrerit feis. Aliduam sed malesuade
+                        eros.</p>
+                    <div class="flex-container action-icons">
+                        <i class="button icon" data-feather="star"></i>
+                        <i class="button icon" data-feather="eye"></i>
+                        <i class="button icon" data-feather="share"></i>
+                    </div>
+                </div>
+                <div class="info-card project-card">
+                    <h4>Money Maker</h4>
+                    <p>Present convallis, llbero quis congue
+                        elementum, nunc ante raucibus sapien, ac
+                        scelerisque tortor ourus sit amet ex
+                        Pellentesque mollis nec sem vel allauam.</p>
+                    <div class="flex-container action-icons">
+                        <i class="button icon" data-feather="star"></i>
+                        <i class="button icon" data-feather="eye"></i>
+                        <i class="button icon" data-feather="share"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="ann">
+            <h1>Announcements</h1>
+            <div class="info-card news-card">
+                <h5>Site Maintenance</h5>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                <hr>
+                <h5>Community Share Day</h5>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation...</p>
+                <hr>
+                <h5>Updated Privicy Policy</h5>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation...</p>
+            </div>
+            <div class="trend">
+                <h1>Trending</h1>
+                <div class="info-card news-card">
+                    <div class="flex-container user-card">
+                        <img class="user" src="/images/st1.svg" alt="">
+                        <div>
+                            <p class="username">@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="flex-container user-card">
+                        <img class="user" src="/images/st2.svg" alt="">
+                        <div>
+                            <p class="username">@morgan</p>
+                            <p>Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="flex-container user-card">
+                        <img class="user" src="/images/st3.svg" alt="">
+                        <div>
+                            <p class="username">@kendall</p>
+                            <p>Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="flex-container user-card">
+                        <img class="user" src="/images/st4.svg" alt="">
+                        <div>
+                            <p class="username">@alex</p>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <div class="menu">Menu</div>
-    <div class="content">Content</div>
-    <div class="ann">Ann</div>
-    <div class="trend">Trend</div>
-</div>
 
     <script>
-      feather.replace()
+        feather.replace()
     </script>
     <script src="script.js" defer></script>
 
-  </body>
+</body>
+
 </html>
 
 
